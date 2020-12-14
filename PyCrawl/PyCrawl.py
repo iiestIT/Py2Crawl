@@ -2,6 +2,7 @@ from PyCrawl.utils.logging import init_logger
 from PyCrawl.settings.base_settings import BaseSettings
 from PyCrawl.utils.sentry import init_sentry
 from PyCrawl.exceptions import SentryDSNNotSet
+from PyCrawl.spider import PyCrawlSpider
 
 
 class PyCrawl:
@@ -14,5 +15,5 @@ class PyCrawl:
                 raise SentryDSNNotSet
             init_sentry(str(self.settings.SENTRY_DSN))
 
-    def crawl(self, spider, *args, **kwargs):
-        pass
+    async def crawl(self, spider: PyCrawlSpider, *args, **kwargs):
+        await spider.start_crawler()

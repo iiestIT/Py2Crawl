@@ -4,5 +4,5 @@ class ParserSettings:
         "//video/@src", "//source/@src", "//track/@src", "//embed/@src", "//object/@data"
     ]
     xpath_headlines = [
-        "//h1", "//h2", "//h3", "//h4", "//h5", "//h6"
+        "//h1/text()", "//h2/text()", "//h3/text()", "//h4/text()", "//h5/text()", "//h6/text()"
     ]

@@ -2,6 +2,7 @@ from PyWeb.main import get as pw_get
 
 
 class PyWebRequest:
-    async def get(self, url):
-        res = await pw_get(url)
-        return res
+    @classmethod
+    async def get(cls, url):
+        res = pw_get(url)
+        return dict(res)
