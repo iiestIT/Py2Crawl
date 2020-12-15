@@ -1,4 +1,4 @@
-from PyWeb.main import get as pw_get
+from Py2Web.main import get as pw_get
 
 
 class PyWebRequest:
