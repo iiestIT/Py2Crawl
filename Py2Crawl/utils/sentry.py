@@ -1,6 +1,11 @@
-from sentry_sdk.integrations.logging import LoggingIntegration
-import sentry_sdk
+from Py2Crawl.exceptions import CanNotImportSentry
 import logging
+
+try:
+    from sentry_sdk.integrations.logging import LoggingIntegration
+    import sentry_sdk
+except ImportError as e:
+    raise CanNotImportSentry
 
 
 def init_sentry(dsn: str):
