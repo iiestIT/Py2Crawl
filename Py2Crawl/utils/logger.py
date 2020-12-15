@@ -12,3 +12,6 @@ def init_logger():
 
     logger.addHandler(sh)
     return logger
+
+
+LOGGER = init_logger()

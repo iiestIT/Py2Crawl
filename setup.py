@@ -7,7 +7,7 @@ setup(
     description='A python framework to scrape/crawl the web in an async way',
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url='https://github.com/iiestIT/PyCrawl',
+    url='https://github.com/iiestIT/Py2Crawl',
     author='iiestIT',
     author_email='it.iiest.de@gmail.com',
     classifiers=[
