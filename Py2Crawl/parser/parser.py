@@ -1,6 +1,6 @@
 from lxml import html
 from urllib.parse import urlparse
-from PyCrawl.settings.parser_settings import ParserSettings
+from Py2Crawl.settings.parser_settings import ParserSettings
 
 
 class HTMLParser:

@@ -1,4 +1,4 @@
-from PyCrawl.exceptions import InvalidUrl
+from Py2Crawl.exceptions import InvalidUrl
 
 
 def valid_url(url: str):

@@ -1,8 +1,8 @@
-from PyCrawl.http.methods import PyCrawlMethods
-from PyCrawl.http.pwb_http import PyWebRequest
-from PyCrawl.http.a_http import AsyncHttpRequest
-from PyCrawl.exceptions import InvalidMethod
-from PyCrawl.utils.input_validation import valid_url
+from Py2Crawl.http.methods import PyCrawlMethods
+from Py2Crawl.http.pwb_http import PyWebRequest
+from Py2Crawl.http.a_http import AsyncHttpRequest
+from Py2Crawl.exceptions import InvalidMethod
+from Py2Crawl.utils.input_validation import valid_url
 
 
 class Request:

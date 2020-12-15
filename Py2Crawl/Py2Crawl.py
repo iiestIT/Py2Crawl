@@ -1,11 +1,11 @@
-from PyCrawl.utils.logging import init_logger
-from PyCrawl.settings.base_settings import BaseSettings
-from PyCrawl.utils.sentry import init_sentry
-from PyCrawl.exceptions import SentryDSNNotSet
-from PyCrawl.spider import PyCrawlSpider
+from Py2Crawl.utils.logging import init_logger
+from Py2Crawl.settings.base_settings import BaseSettings
+from Py2Crawl.utils.sentry import init_sentry
+from Py2Crawl.exceptions import SentryDSNNotSet
+from Py2Crawl.spider import PyCrawlSpider
 
 
-class PyCrawl:
+class Py2Crawl:
     def __int__(self, settings=BaseSettings()):
         self.settings = settings
         self.logger = init_logger()

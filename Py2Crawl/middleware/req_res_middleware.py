@@ -1,5 +1,5 @@
-from PyCrawl.utils.request import Request
-from PyCrawl.utils.response import Response
+from Py2Crawl.utils.request import Request
+from Py2Crawl.utils.response import Response
 
 
 class ReqResMiddleware:

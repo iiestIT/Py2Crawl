@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='PyCrawl',
+    name='Py2Crawl',
     version='0.0.1.dev1',
     description='A python framework to scrape/crawl the web in an async way',
     long_description=open("README.md").read(),

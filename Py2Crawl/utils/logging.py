@@ -2,7 +2,7 @@ import logging
 
 
 def init_logger():
-    logger = logging.getLogger("PyCrawl")
+    logger = logging.getLogger("Py2Crawl")
     logger.setLevel(logging.INFO)
 
     sh = logging.StreamHandler()

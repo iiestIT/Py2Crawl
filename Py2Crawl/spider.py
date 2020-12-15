@@ -1,7 +1,7 @@
-from PyCrawl.middleware.req_res_middleware import ReqResMiddleware
-from PyCrawl.utils.request import Request
-from PyCrawl.utils.response import Response
-from PyCrawl.http.methods import PyCrawlMethods
+from Py2Crawl.middleware.req_res_middleware import ReqResMiddleware
+from Py2Crawl.utils.request import Request
+from Py2Crawl.utils.response import Response
+from Py2Crawl.http.methods import PyCrawlMethods
 from PySide2.QtWidgets import QApplication
 
 
