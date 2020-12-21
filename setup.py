@@ -13,8 +13,7 @@ setup(
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
-        "License :: OSI Approved :: MIT License"
+        "Programming Language :: Python :: 3.9"
     ],
     keywords='pyside2 framework web spider async',
     python_requires='>=3.8',
