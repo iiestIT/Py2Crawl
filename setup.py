@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Py2Crawl',
-    version='1.0.1',
+    version='1.0.3',
     description='A python framework to scrape/crawl the web in an async way',
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
@@ -13,8 +13,7 @@ setup(
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
-        "License :: OSI Approved :: MIT License"
+        "Programming Language :: Python :: 3.9"
     ],
     keywords='pyside2 framework web spider async',
     python_requires='>=3.8',
