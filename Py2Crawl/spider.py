@@ -6,12 +6,16 @@ from Py2Crawl.utils.logger import LOGGER
 
 
 class Py2CrawlSpider:
-    def __init__(self, start_urls: list, start_urls_method: Py2CrawlMethods, callback, q_app, *args, **kwargs):
+    def __init__(
+            self, start_urls: list, start_urls_method: Py2CrawlMethods, callback, q_app,
+            start_request=Request, *args, **kwargs
+    ):
         LOGGER.info("Initialize Spider")
         self.start_urls: list = start_urls
         self.callback = callback
         self.start_urls_method = start_urls_method
         self.crawled = []
+        self.start_request = start_request
         self.req_res = ReqResMiddleware()
         self.q_app = q_app
 
@@ -28,7 +32,7 @@ class Py2CrawlSpider:
 
     async def start_crawler(self, *args, **kwargs):
         for i in self.start_urls:
-            r = Request(
+            r = self.start_request(
                 url=i,
                 method=self.start_urls_method
             )

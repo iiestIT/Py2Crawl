@@ -22,7 +22,9 @@ class ReqResMiddleware:
         res = Response(
             url=response.get("url"),
             content=response.get("content"),
-            cookies=response.get("cookies")
+            cookies=response.get("cookies"),
+            js_response=response.get("js_response"),
+            process_time=response.get("process_time")
         )
         return res
 
